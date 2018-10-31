@@ -29,14 +29,14 @@ namespace pruebaJM.API.Controllers
 
         // POST api/values
         [HttpPost]
-        public ActionResult  ValidFormPost([FromBody] VehicleRequest value)
+        public ActionResult  ProcessVehicle([FromBody] VehicleRequest value)
         {
 
         VehicleValidationResultCode valid = VehicleValidationResultCode.Valid;
         VehicleValidationResultCode invalid = VehicleValidationResultCode.Invalid;
         
         ProcessVehicleResponse validationResult  = new ProcessVehicleResponse 
-        {VehicleId = 1 , ReturnCode = invalid };
+        {VehicleId = 1 , ReturnCode = valid };
 
             return Ok(validationResult);
 
