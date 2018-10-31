@@ -1,0 +1,14 @@
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.csprojAssemblyReference.cache
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.csproj.CoreCompileInputs.cache
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.RazorAssemblyInfo.cache
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.RazorAssemblyInfo.cs
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.AssemblyInfoInputs.cache
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.AssemblyInfo.cs
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\bin\Debug\netcoreapp2.2\pruebaJM.API.deps.json
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\bin\Debug\netcoreapp2.2\pruebaJM.API.runtimeconfig.json
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\bin\Debug\netcoreapp2.2\pruebaJM.API.runtimeconfig.dev.json
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\bin\Debug\netcoreapp2.2\pruebaJM.API.dll
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\bin\Debug\netcoreapp2.2\pruebaJM.API.pdb
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.RazorTargetAssemblyInfo.cache
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.dll
+C:\Users\JM_B\Documents\dotnetJM\pruebaJM.API\obj\Debug\netcoreapp2.2\pruebaJM.API.pdb
