@@ -34,9 +34,25 @@ namespace pruebaJM.API.Controllers
 
         VehicleValidationResultCode valid = VehicleValidationResultCode.Valid;
         VehicleValidationResultCode invalid = VehicleValidationResultCode.Invalid;
+        ProcessVehicleResponse validationResult  = new ProcessVehicleResponse() ;
+//validated the input form data
+        if (String.IsNullOrEmpty(value.ManufacturerNameShort) || 
+            String.IsNullOrEmpty(value.Type) ) {
+
+            // ProcessVehicleResponse validationResult  = new ProcessVehicleResponse 
+            // {VehicleId = 1 , ReturnCode = invalid }; 
+            validationResult.VehicleId = 1 ;
+            validationResult.ReturnCode =  invalid ;         
+        }
         
-        ProcessVehicleResponse validationResult  = new ProcessVehicleResponse 
-        {VehicleId = 1 , ReturnCode = valid };
+        else{ 
+            // ProcessVehicleResponse validationResult  = new ProcessVehicleResponse 
+            // {VehicleId = 1 , ReturnCode = valid };
+                validationResult.VehicleId = 1 ;
+                validationResult.ReturnCode = valid ;     
+            }
+        
+
 
             return Ok(validationResult);
 
