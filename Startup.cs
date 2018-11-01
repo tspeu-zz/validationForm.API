@@ -49,6 +49,9 @@ namespace pruebaJM.API
             app.UseCors(x => x.AllowAnyOrigin()
             .AllowAnyHeader().AllowAnyMethod());
 
+            // Handles non-success status codes with empty body
+            app.UseStatusCodePagesWithReExecute("/errors/{0}");
+
             app.UseMvc();
         }
     }
