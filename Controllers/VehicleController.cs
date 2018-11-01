@@ -14,16 +14,18 @@ namespace pruebaJM.API.Controllers
     {
         public const int idVehicle = 1; 
 
-                // POST api/values
-        [HttpPost]
-        public ActionResult  ProcessVehicle([FromBody] VehicleRequest value)
-        {
 /* instaciate variables result of the input form validation*/
         VehicleValidationResultCode valid = VehicleValidationResultCode.Valid;
         VehicleValidationResultCode invalid = VehicleValidationResultCode.Invalid;
-        
+
 /*output result object */
-        ProcessVehicleResponse validationResult  = new ProcessVehicleResponse() ;
+        ProcessVehicleResponse validationResult  = new ProcessVehicleResponse();
+        
+        // POST api/values
+        [HttpPost]
+        public ActionResult  ProcessVehicle([FromBody] VehicleRequest value)
+        {
+        
 
             if (value != null)  
             {
@@ -33,12 +35,12 @@ namespace pruebaJM.API.Controllers
                     || IsNullOrValue(value.VehicleId, 0) || IsNullOrDefault(value.Price) ) 
                 {   //item.IsNullOrValue(0)
 
-                    validationResult.VehicleId = idVehicle ;
+                    validationResult.VehicleId = value.VehicleId ;
                     validationResult.ReturnCode =  invalid ;         
                 }
                 else { 
 
-                    validationResult.VehicleId = idVehicle ;
+                    validationResult.VehicleId = value.VehicleId ;
                     validationResult.ReturnCode = valid ;     
                 }
             
