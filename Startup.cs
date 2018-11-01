@@ -45,7 +45,8 @@ namespace pruebaJM.API
             }
 
             //app.UseHttpsRedirection();
-//se especifica el origen de las llamadas permitidas en develop
+            
+            //the origin of allowed calls in develop is specified
             app.UseCors(x => x.AllowAnyOrigin()
             .AllowAnyHeader().AllowAnyMethod());
 
