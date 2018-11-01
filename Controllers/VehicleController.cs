@@ -20,7 +20,7 @@ namespace pruebaJM.API.Controllers
 
 /*output result object */
         ProcessVehicleResponse validationResult  = new ProcessVehicleResponse();
-        
+
         // POST api/values
         [HttpPost]
         public ActionResult  ProcessVehicle([FromBody] VehicleRequest value)
@@ -44,7 +44,7 @@ namespace pruebaJM.API.Controllers
                     validationResult.ReturnCode = valid ;     
                 }
             
-            return Ok(validationResult);
+                return Ok(validationResult);
 
             }
 
@@ -55,7 +55,7 @@ namespace pruebaJM.API.Controllers
 
         }
 /**************************************************************************************************** */
-/*validated is any  type is null or 0
+/*validated if  is null or 0 any type
 
 IsNullOrDefault(d); // true
 MyClass c = null;
