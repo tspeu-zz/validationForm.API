@@ -26,6 +26,9 @@ namespace pruebaJM.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //add CORS->
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +45,10 @@ namespace pruebaJM.API
             }
 
             //app.UseHttpsRedirection();
+//se especifica el origen de las llamadas permitidas en develop
+            app.UseCors(x => x.AllowAnyOrigin()
+            .AllowAnyHeader().AllowAnyMethod());
+
             app.UseMvc();
         }
     }
