@@ -44,7 +44,7 @@ namespace pruebaJM.API
                 //  app.UseHsts();
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             
             //the origin of allowed calls in develop is specified
             app.UseCors(x => x.AllowAnyOrigin()
@@ -52,7 +52,8 @@ namespace pruebaJM.API
 
             // Handles non-success status codes with empty body
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
-
+          //  app.AllowAnyOrigin();
+            
             app.UseMvc();
         }
     }
